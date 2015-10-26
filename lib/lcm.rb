@@ -1,4 +1,4 @@
-require "./gcd.rb"
+require 'lib/gcd'
 
 def lcm (a, b)
     w = gcd(a, b)
