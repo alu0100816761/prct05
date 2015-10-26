@@ -1,4 +1,4 @@
-require 'lib/fraccion.rb'
+require 'lib/fraccion'
 require 'test/unit'
 
 class TestFraccion < Test::Unit::TestCase
@@ -8,5 +8,6 @@ class TestFraccion < Test::Unit::TestCase
     end
     def test_simple
         assert_equal("2/3", @datouno.to_s)
+        assert_equal("5/2", (@datodos*4).to_s)
     end
 end

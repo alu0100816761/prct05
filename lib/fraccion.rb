@@ -13,6 +13,7 @@ class Fraccion
     end
     def *(value)
         x = @x * value
-        Fraccion.new(x/gcd(x,@y), @y/gcd(x,@y))
+        max = gcd(x,y)
+        Fraccion.new(x / max, @y / max)
     end
 end
