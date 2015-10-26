@@ -26,4 +26,9 @@ class Fraccion
         max = gcd(x,@y)
         Fraccion.new(x / max, @y / max)
     end
+    def -(value)
+        x = @x - (@y * value)
+        max = gcd(x,@y)
+        Fraccion.new(x / max, @y / max)
+    end
 end
