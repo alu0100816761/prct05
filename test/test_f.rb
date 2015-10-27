@@ -16,5 +16,6 @@ class TestFraccion < Test::Unit::TestCase
         assert_equal("16/15", (@datouno/@datodos).to_s)
         assert_equal("31/24", (@datouno+@datodos).to_s)
         assert_equal("1/24", (@datouno-@datodos).to_s)
+        assert_equal("-2/3", (-@datouno).to_s)
     end
 end

@@ -59,4 +59,7 @@ class Fraccion
             Fraccion.new(x / max, @y / max)
         end
     end
+    def -@
+        Fraccion.new(@x * -1, @y)
+    end
 end
