@@ -24,9 +24,16 @@ class Fraccion
         end
     end 
     def /(value)
-        y = @y * value
-        max = gcd(@x,y)
-        Fraccion.new(@x / max, y / max)
+        if value.is_a? Fraccion
+            x = @x * value.y
+            y = @y * value.x
+            max = gcd(x,y)
+            Fraccion.new(x / max, y / max)
+        else
+            y = @y * value
+            max = gcd(@x,y)
+            Fraccion.new(@x / max, y / max)
+        end
     end
     def +(value)
         x = @x + (@y * value)
