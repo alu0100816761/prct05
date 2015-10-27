@@ -12,5 +12,6 @@ class TestFraccion < Test::Unit::TestCase
         assert_equal("1/16", (@datodos/10).to_s)
         assert_equal("61/8", (@datodos+7).to_s)
         assert_equal("-19/8", (@datodos-3).to_s)
+        assert_equal("5/12", (@datouno*@datodos).to_s)
     end
 end
